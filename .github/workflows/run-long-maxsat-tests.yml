@@ -1,0 +1,14 @@
+name: Build and run long ksmt maxsat tests
+
+on:
+  workflow_dispatch:
+
+env:
+  TEST_DATA_REVISION: 0.0.0
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
