@@ -1,4 +1,4 @@
-name: Build and run long MaxSMT tests
+name: (PMRes solver) Build and run long MaxSMT tests
 
 on:
   workflow_dispatch:
