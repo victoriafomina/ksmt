@@ -1,0 +1,17 @@
+name: (PrimalDualMaxRes solver) Build and run long MaxSMT tests
+
+on:
+  workflow_dispatch:
+    inputs:
+      commitSHA:
+        description: Commit SHA
+        required: false
+        type: string
+        default: ""
+
+jobs:
+  prepare-matrix:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print environment variables
+        run: printenv
