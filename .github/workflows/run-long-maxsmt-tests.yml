@@ -1,7 +1,7 @@
 name: Build and run long MaxSMT tests
 
 on:
-  workflow_dispatch:
+  workflow_call:
     inputs:
       commitSHA:
         description: Commit SHA
